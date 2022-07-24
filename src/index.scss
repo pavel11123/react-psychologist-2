@@ -1,0 +1,70 @@
+@import "./fonts.scss";
+@import "./base.scss";
+@import "./mixins.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// ---------Оболочка-----------
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #ece8f3;
+}
+
+.container {
+  max-width: rem(1030);
+  margin: 0 auto;
+  padding: 0 rem(15) 0 rem(15);
+}
+// ---------Оболочка-----------
+
+// ---------MAIN-----------
+.main {
+  flex: 1 1 auto;
+}
+// ---------MAIN-----------
+
+// ---------стандартные flex стили-----------
+.d-fl {
+  display: flex;
+}
+
+.d-fl-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-fl-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-fl-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+// ---------стандартные flex стили-----------
+
+// ---------BEM-----------
+.btn {
+  display: inline-block;
+}
+
+.section__block {
+  flex: 1 1 rem(280.5);
+}
