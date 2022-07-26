@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 import { Homepage } from "./pages/Homepage";
-import { Aboutpage } from "./pages/Aboutpage";
 import { Servicespage } from "./pages/Servicespage";
 import { Feedbackpage } from "./pages/Feedbackpage";
 import { Blogpage } from "./pages/Blogpage";
@@ -17,10 +16,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/aboutpage" element={<Aboutpage />} />
-        <Route path="/servicespage" element={<Servicespage />} />
-        <Route path="/feedbackpage" element={<Feedbackpage />} />
-        <Route path="/blogpage" element={<Blogpage />} />
+        <Route path="/services" element={<Servicespage />} />
+        <Route path="/feedback" element={<Feedbackpage />} />
+        <Route path="/blog" element={<Blogpage />} />
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
 

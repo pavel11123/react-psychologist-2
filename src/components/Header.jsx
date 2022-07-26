@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
 
+import { Link } from "react-router-dom";
+
 import "./Header.scss";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   const items = [
-    { value: "Главная", href: "/" },
-    { value: "Обо мне", href: "/aboutpage" },
-    { value: "Услуги и цены", href: "/servicespage" },
-    { value: "Отзывы клиентов", href: "/feedbackpage" },
-    { value: "Познавательные материалы", href: "/blogpage" },
+    { value: "Обо мне", href: "/" },
+    { value: "Услуги и цены", href: "/services" },
+    { value: "Отзывы клиентов", href: "/feedback" },
+    { value: "Познавательные материалы", href: "/blog" },
   ];
 
   return (
@@ -20,11 +21,11 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="line"></div>
           <div className="header-main">
-            <a href="index.html">
+            <Link to="/">
               <div className="logo">
                 <img src="/img/icon/logo.svg" alt="Екатерина Славная" />
               </div>
-            </a>
+            </Link>
             <div className="line"></div>
             <nav>
               <div
