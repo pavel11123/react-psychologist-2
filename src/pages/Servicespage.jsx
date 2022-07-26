@@ -9,7 +9,7 @@ const Servicespage = () => {
           <h2 className="title">Услуги и цены</h2>
           <div className="services-grid">
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-1.png"
@@ -20,7 +20,7 @@ const Servicespage = () => {
               </figure>
             </div>
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-2.png"
@@ -31,7 +31,7 @@ const Servicespage = () => {
               </figure>
             </div>
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-3.png"
@@ -42,7 +42,7 @@ const Servicespage = () => {
               </figure>
             </div>
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-4.png"
@@ -53,7 +53,7 @@ const Servicespage = () => {
               </figure>
             </div>
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-5.png"
@@ -64,7 +64,7 @@ const Servicespage = () => {
               </figure>
             </div>
             <div className="services__block">
-              <figure>
+              <figure className="d-fl-col">
                 <div className="services__img">
                   <img
                     src="img/photo/services-6.png"
@@ -91,7 +91,77 @@ const Servicespage = () => {
           </div>
         </div>
       </section>
-      <section className="section__work"></section>
+      <section className="section__work">
+        <div className="container">
+          <h2 className="title">как проходит работа</h2>
+          <div className="work-grid">
+            <div className="work__block">
+              <div className="work__block-text d-fl-col">
+                <h4>Бесплатный анализ ситуации</h4>
+                <p>
+                  Чтобы понять, находится ли Ваш запрос в зоне моих
+                  профессиональных компетенций.
+                </p>
+              </div>
+            </div>
+            <div className="work__block">
+              <div className="work__block-text d-fl-col">
+                <h4>Бесплатный анализ ситуации</h4>
+                <p>
+                  Чтобы понять, находится ли Ваш запрос в зоне моих
+                  профессиональных компетенций.
+                </p>
+              </div>
+            </div>
+            <div className="work__block">
+              <div className="work__block-text d-fl-col">
+                <h4>Бесплатный анализ ситуации</h4>
+                <p>
+                  Чтобы понять, находится ли Ваш запрос в зоне моих
+                  профессиональных компетенций.
+                </p>
+              </div>
+            </div>
+            <div className="work__block">
+              <div className="work__block-text d-fl-col">
+                <h4>Бесплатный анализ ситуации</h4>
+                <p>
+                  Чтобы понять, находится ли Ваш запрос в зоне моих
+                  профессиональных компетенций.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="work__popup-main d-fl-wrap">
+            <a href="/" className="work__popup d-fl-col">
+              <div className="work__popup-img">
+                <img
+                  src="img/icon/meeting.png"
+                  alt="Первая консультация от Екатерины Славной бесплатно!"
+                />
+              </div>
+              <h5>
+                Записаться на
+                <br /> первичную консультацию
+              </h5>
+              <span>Бесплатно</span>
+            </a>
+            <a href="/" className="work__popup d-fl-col">
+              <div className="work__popup-img">
+                <img
+                  src="img/icon/schedule.png"
+                  alt="Первая консультация от Екатерины Славной бесплатно!"
+                />
+              </div>
+              <h5>
+                Записаться на
+                <br /> индивидуальную консультацию
+              </h5>
+              <span>70 минут / 5000₽</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
