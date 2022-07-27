@@ -83,4 +83,13 @@ code {
   text-transform: uppercase;
   color: #131b15;
   padding-bottom: rem(20);
+
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(22, 32, 1280, 600);
+    line-height: adaptiv-num-rem(30, 45, 1280, 600);
+  }
+  @media (max-width: 600px) {
+    font-size: adaptiv-num-rem(22, 32, 600, 320);
+    line-height: adaptiv-num-rem(30, 45, 600, 320);
+  }
 }
