@@ -7,6 +7,7 @@ import "./Header.scss";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [activeBtn, setBtnActive] = useState(false);
 
   const items = [
     { value: "Обо мне", href: "/" },
@@ -29,10 +30,12 @@ const Header = () => {
             <div className="line"></div>
             <nav>
               <div
-                className="burger-btn"
-                onClick={() => setMenuActive(!menuActive)}
+                className={activeBtn ? "burger-btn active" : "burger-btn"}
+                onClick={() => {
+                  setMenuActive(!menuActive);
+                  setBtnActive(!activeBtn);
+                }}
               >
-                {/*добавь класс active при клике к menu__btn */}
                 <span></span>
                 <span></span>
                 <span></span>
@@ -41,12 +44,7 @@ const Header = () => {
           </div>
           <div className="line"></div>
         </div>
-        <Menu
-          active={menuActive}
-          setActive={setMenuActive}
-          header={"Бургер меню"}
-          items={items}
-        />
+        <Menu active={menuActive} setActive={setMenuActive} items={items} />
       </header>
     </>
   );

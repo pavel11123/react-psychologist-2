@@ -98,10 +98,18 @@ $maxWidth: 1440;
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 88px;
   max-width: 770px;
   margin: 75px auto;
+
+  @media (max-width: 1400px) {
+    gap: adaptiv-num-rem(20, 88, 1400, 320);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 }
 
 .services__block {
@@ -138,7 +146,7 @@ $maxWidth: 1440;
 
 .services__more-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(rem(195), 1fr));
   gap: 20px;
 }
 
@@ -161,6 +169,25 @@ $maxWidth: 1440;
     font-size: rem(16);
     line-height: rem(20);
     color: #ffffff;
+  }
+
+  span {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../../public/img/icon/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 50px;
+      height: 5px;
+      margin-left: rem(15);
+    }
   }
 }
 // -----------Стартовый блок Услуги и цены-------------
@@ -200,6 +227,11 @@ $maxWidth: 1440;
     -o-border-radius: 50%;
     flex-shrink: 0;
     margin-right: rem(20);
+
+    @media (max-width: 1280px) {
+      width: adaptiv-num-rem(44, 64, 1280, 320);
+      height: adaptiv-num-rem(44, 64, 1280, 320);
+    }
   }
 
   &:nth-child(1)::before {
@@ -223,12 +255,22 @@ $maxWidth: 1440;
     font-size: rem(20);
     line-height: rem(24);
     color: #131b15;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(18, 20, 1280, 320);
+      line-height: adaptiv-num-rem(22, 24, 1280, 320);
+    }
   }
   p {
     font-weight: 400;
     font-size: rem(16);
     line-height: rem(20);
     color: #131b15;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(14, 16, 1280, 320);
+      line-height: adaptiv-num-rem(18, 20, 1280, 320);
+    }
   }
 }
 

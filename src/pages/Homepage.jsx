@@ -9,6 +9,12 @@ const Homepage = () => {
             <div className="section__block section__start-left">
               <h2>Ваш личный психолог</h2>
               <h1>Екатерина Славная</h1>
+              <div className="start__img-phone">
+                <img
+                  src="/img/photo/photo-main.png"
+                  alt="Личный психолог - Екатерина Славная"
+                />
+              </div>
               <ul className="d-fl-col">
                 <li>Индивидуальные консультации</li>
                 <li>Экстренная online-помощь</li>
@@ -45,7 +51,7 @@ const Homepage = () => {
             </div>
             <div className="section__block section__about-right d-fl">
               <div className="section__about-right--wrapper d-fl-col">
-                <h2>
+                <h2 className="title">
                   Привет! Меня <br /> зовут Екатерина
                 </h2>
                 <h3>Я – практикующий психолог</h3>
@@ -54,20 +60,20 @@ const Homepage = () => {
                     <p>
                       На сегодняшний день я являюсь экспертом в области
                       диетологии, избыточного веса, спортивной медицины и
-                      рациональных тренировок.{" "}
+                      рациональных тренировок.
                     </p>
                   </li>
                   <li>
                     <p>
                       Прошла обучение в Международной Академии Аэробики и в 2003
-                      году и открыла свой первый небольшой клуб.{" "}
+                      году и открыла свой первый небольшой клуб.
                     </p>
                   </li>
                   <li>
                     <p>
                       За годы работы я поняла что проблемы в сознании, а не в
                       выборе диеты. И тогда получила ещё и психологическое
-                      образование.{" "}
+                      образование.
                     </p>
                   </li>
                 </ul>
@@ -88,7 +94,7 @@ const Homepage = () => {
       <section className="section__education">
         <div className="container">
           <div className="education-main">
-            <h2>Моё образование и сертификаты</h2>
+            <h2 className="title">Моё образование и сертификаты</h2>
             <ul className="d-fl-col">
               <li>Международная академия аэробики (2003 год)</li>
               <li>Трансатлантическая академия психологии (2007 год)</li>
@@ -151,7 +157,7 @@ const Homepage = () => {
       <section className="section__question">
         <div className="container">
           <div className="question-main">
-            <h2>часто задаваемые вопросы</h2>
+            <h2 className="title">часто задаваемые вопросы</h2>
           </div>
         </div>
       </section>

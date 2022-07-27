@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import "./Menu.scss";
 
-const Menu = ({ header, items, active, setActive }) => {
+const Menu = ({ items, active, setActive }) => {
   return (
     <div
       className={active ? "menu active" : "menu"}
@@ -11,10 +11,14 @@ const Menu = ({ header, items, active, setActive }) => {
     >
       <div className="blur"></div>
       <div className="menu__content" onClick={(e) => e.stopPropagation()}>
-        <div className="menu__header">{header}</div>
+        <Link to="/">
+          <div className="logo">
+            <img src="/img/icon/logo-1.svg" alt="Екатерина Славная" />
+          </div>
+        </Link>
         <ul>
           {items.map((item) => (
-            <li>
+            <li className="d-fl-col">
               <span></span>
               <Link to={item.href}>{item.value}</Link>
             </li>
