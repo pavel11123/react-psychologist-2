@@ -108,9 +108,21 @@ $maxWidth: 1440;
 
   h3 {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: rem(20);
+    line-height: rem(24);
     color: #000000;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(16, 20, 1280, 320);
+      line-height: adaptiv-num-rem(20, 24, 1280, 320);
+    }
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 24px;
+    color: #683ace;
   }
 }
 
@@ -118,18 +130,18 @@ $maxWidth: 1440;
 }
 
 .accordion-content {
-  padding: 0 rem(30) rem(30) rem(30);
+  padding: 0 0 rem(30) rem(30);
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(20);
+  color: #000000;
+
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(13, 16, 1280, 320);
+    line-height: adaptiv-num-rem(18, 20, 1280, 320);
+    padding: 0 0 rem(30) adaptiv-num-rem(15, 30, 1280, 320);
+  }
 }
 
 .accordion-content {
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    font-size: 18px;
-  }
-
-  .accordion {
-    width: 90%;
-  }
 }

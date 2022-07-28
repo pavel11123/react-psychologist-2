@@ -21,7 +21,17 @@ const Feedbackpage = () => {
             <h2 className="title">отзывы моих клиентов</h2>
             <Slider {...settings}>
               <div className="slider">
-                <h3>Александра, 37 лет</h3>
+                <div className="slider__title d-fl">
+                  <h3>Елена, 30 лет</h3>
+                  <div className="slider__title-link d-fl-col">
+                    <div className="slider__title-img">
+                      <svg>
+                        <use xlinkHref="/sprite.svg#wp"></use>
+                      </svg>
+                    </div>
+                    <span>посмотреть диалог</span>
+                  </div>
+                </div>
                 <div className="slider__card d-fl-wrap">
                   <div className="slider__block-left">
                     <p>
@@ -62,7 +72,17 @@ const Feedbackpage = () => {
                 </div>
               </div>
               <div className="slider">
-                <h3>Александра, 37 лет</h3>
+                <div className="slider__title d-fl">
+                  <h3>Александра, 40 лет</h3>
+                  <div className="slider__title-link d-fl-col">
+                    <div className="slider__title-img">
+                      <svg>
+                        <use xlinkHref="/sprite.svg#wp"></use>
+                      </svg>
+                    </div>
+                    <span>посмотреть диалог</span>
+                  </div>
+                </div>
                 <div className="slider__card d-fl-wrap">
                   <div className="slider__block-left">
                     <p>
@@ -103,7 +123,17 @@ const Feedbackpage = () => {
                 </div>
               </div>
               <div className="slider">
-                <h3>Александра, 37 лет</h3>
+                <div className="slider__title d-fl">
+                  <h3>Мария, 20 лет</h3>
+                  <div className="slider__title-link d-fl-col">
+                    <div className="slider__title-img">
+                      <svg>
+                        <use xlinkHref="/sprite.svg#wp"></use>
+                      </svg>
+                    </div>
+                    <span>посмотреть диалог</span>
+                  </div>
+                </div>
                 <div className="slider__card d-fl-wrap">
                   <div className="slider__block-left">
                     <p>

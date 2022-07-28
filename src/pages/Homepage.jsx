@@ -22,7 +22,7 @@ const Homepage = () => {
                 <li>Экстренная online-помощь</li>
                 <li>Познавательные материалы</li>
               </ul>
-              <a className="btn start__btn" href="index.html">
+              <a className="btn start__btn" href="/">
                 Записаться на бесплатную консультацию
               </a>
             </div>

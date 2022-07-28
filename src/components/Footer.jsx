@@ -13,13 +13,19 @@ function Footer() {
           <div className="line"></div>
           <div className="society">
             <div className="society__img">
-              <img src="/img/icon/tg.png" alt="Телеграмм - Екатерина Славная" />
+              <svg>
+                <use xlinkHref="/sprite.svg#tg"></use>
+              </svg>
             </div>
             <div className="society__img">
-              <img src="/img/icon/wp.png" alt="WhatsApp - Екатерина Славная" />
+              <svg>
+                <use xlinkHref="/sprite.svg#wp"></use>
+              </svg>
             </div>
             <div className="society__img">
-              <img src="/img/icon/vk.png" alt="Вконтакте - Екатерина Славная" />
+              <svg>
+                <use xlinkHref="/sprite.svg#vk"></use>
+              </svg>
             </div>
           </div>
         </div>
