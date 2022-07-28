@@ -103,17 +103,89 @@ $maxWidth: 1440;
   border: 2px solid #683ace;
   padding: rem(50);
 
+  @media (max-width: 1280px) {
+    padding: adaptiv-num-rem(15, 50, 1280, 320)
+      adaptiv-num-rem(15, 50, 1280, 320) rem(50)
+      adaptiv-num-rem(15, 50, 1280, 320);
+  }
+
   h3 {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: rem(24);
+    line-height: rem(29);
     color: #683ace;
-    margin-bottom: rem(30);
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(18, 24, 1280, 320);
+      line-height: adaptiv-num-rem(24, 29, 1280, 320);
+    }
+  }
+}
+
+.slider__title {
+  margin-bottom: rem(30);
+  align-items: flex-end;
+}
+
+.slider__title-link {
+  align-items: center;
+  margin-left: rem(30);
+  cursor: pointer;
+
+  span {
+    font-weight: 500;
+    font-size: rem(10);
+    line-height: rem(12);
+    text-decoration-line: underline;
+    color: #683ace;
+  }
+
+  &:hover .slider__title-img {
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+  }
+}
+
+.slider__title-img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    fill: #683ace;
   }
 }
 
 .slider__card {
   gap: rem(20);
+
+  p {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(20);
+    color: #131b15;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(14, 16, 1280, 712);
+      line-height: adaptiv-num-rem(18, 20, 1280, 712);
+    }
+
+    @media (max-width: 711px) {
+      font-size: adaptiv-num-rem(14, 16, 711, 320);
+      line-height: adaptiv-num-rem(18, 20, 711, 320);
+    }
+  }
 }
 
 .slider__block-left {
@@ -145,11 +217,19 @@ $maxWidth: 1440;
   // background-image: url(../../public/img/icon/arrow-slider.svg);
   right: 130px;
   z-index: 1;
+
+  @media (max-width: 1280px) {
+    right: adaptiv-num-rem(70, 130, 1280, 320);
+  }
 }
 
 .slick-next {
   right: 70px;
   z-index: 1;
+
+  @media (max-width: 1280px) {
+    right: adaptiv-num-rem(30, 70, 1280, 320);
+  }
 }
 
 .slick-prev:before,

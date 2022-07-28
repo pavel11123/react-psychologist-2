@@ -90,98 +90,58 @@ $maxWidth: 1440;
 
 // mixin
 
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  transform: translateX(130%);
-  -webkit-transform: translateX(130%);
-  -moz-transform: translateX(130%);
-  -ms-transform: translateX(130%);
-  -o-transform: translateX(130%);
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
+.accordion {
+  max-width: 100%;
+  margin: rem(20) auto rem(140) auto;
 }
 
-.menu.active {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
+.accordion-item {
+  border-bottom: 2px solid #683ace;
 }
 
-.blur {
-  width: 100vw;
-  height: 100vh;
-  filter: blur(2px);
-  backdrop-filter: blur(2px);
-  position: absolute;
-  -webkit-filter: blur(2px);
-  background: rgba(18, 0, 57, 0.8);
-  position: absolute;
-  z-index: 0;
-}
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: rem(30) 0 rem(30) 0;
 
-.menu__content {
-  width: rem(600);
-  height: 100%;
-  background-color: #baa5e7;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  padding: rem(50) rem(30);
+  h3 {
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(24);
+    color: #000000;
 
-  .logo {
-    @media (max-width: 400px) {
-      width: adaptiv-num-rem(175, 191, 400, 320);
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(16, 20, 1280, 320);
+      line-height: adaptiv-num-rem(20, 24, 1280, 320);
     }
   }
 
-  @media (min-width: 1440px) {
-    width: 40%;
+  span {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 24px;
+    color: #683ace;
   }
+}
+
+.accordion-title:hover {
+}
+
+.accordion-content {
+  padding: 0 0 rem(30) rem(30);
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(20);
+  color: #000000;
 
   @media (max-width: 1280px) {
-    width: adaptiv-num-rem(250, 600, 1280, 320);
-    padding: rem(50) adaptiv-num-rem(15, 30, 1280, 320);
+    font-size: adaptiv-num-rem(13, 16, 1280, 320);
+    line-height: adaptiv-num-rem(18, 20, 1280, 320);
+    padding: 0 0 rem(30) adaptiv-num-rem(15, 30, 1280, 320);
   }
+}
 
-  ul {
-    flex: 1 1 auto;
-    gap: rem(35);
-    margin-top: rem(75);
-    li {
-      a {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: #ffffff;
-        transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-
-        &:hover {
-          color: #f1ebff;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  & .society {
-    margin: 0;
-    & .society__img {
-      & svg {
-        fill: #ffffff;
-      }
-    }
-  }
+.accordion-content {
 }

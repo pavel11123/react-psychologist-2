@@ -1,4 +1,6 @@
 import "./Homepage.scss";
+import Accordion from "../components/Accordion";
+import { accordionData } from "../components/utils/contents";
 
 const Homepage = () => {
   return (
@@ -20,7 +22,7 @@ const Homepage = () => {
                 <li>Экстренная online-помощь</li>
                 <li>Познавательные материалы</li>
               </ul>
-              <a className="btn start__btn" href="index.html">
+              <a className="btn start__btn" href="/">
                 Записаться на бесплатную консультацию
               </a>
             </div>
@@ -158,6 +160,11 @@ const Homepage = () => {
         <div className="container">
           <div className="question-main">
             <h2 className="title">часто задаваемые вопросы</h2>
+            <div className="accordion">
+              {accordionData.map(({ title, content }) => (
+                <Accordion title={title} content={content} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
