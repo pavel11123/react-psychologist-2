@@ -137,6 +137,15 @@ $maxWidth: 1440;
   display: flex;
   gap: rem(50);
 
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(22, 32, 1280, 600);
+    line-height: adaptiv-num-rem(30, 45, 1280, 600);
+  }
+  @media (max-width: 600px) {
+    font-size: adaptiv-num-rem(22, 32, 600, 320);
+    line-height: adaptiv-num-rem(30, 45, 600, 320);
+  }
+
   a {
     font-weight: 400;
     font-size: 16px;
@@ -183,19 +192,20 @@ $maxWidth: 1440;
     color: #ffffff;
     position: relative;
     text-align: center;
-  }
 
-  &::before {
-    content: "";
-    display: block;
-    background-image: url(../../public/img/icon/heart.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: -16px;
-    left: 50%;
-    z-index: 1;
+    &::before {
+      content: "";
+      display: block;
+      background-image: url(../../public/img/icon/heart.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      z-index: 1;
+      margin-left: -16px;
+    }
   }
 }

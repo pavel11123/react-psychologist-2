@@ -90,77 +90,46 @@ $maxWidth: 1440;
 
 // mixin
 
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  transform: translateX(130%);
-  -webkit-transform: translateX(130%);
-  -moz-transform: translateX(130%);
-  -ms-transform: translateX(130%);
-  -o-transform: translateX(130%);
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
+.accordion {
+  max-width: 100%;
+  margin: rem(20) auto rem(140) auto;
 }
 
-.menu.active {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
+.accordion-item {
+  border-bottom: 2px solid #683ace;
 }
 
-.blur {
-  width: 100vw;
-  height: 100vh;
-  filter: blur(2px);
-  backdrop-filter: blur(2px);
-  position: absolute;
-  -webkit-filter: blur(2px);
-  background: rgba(18, 0, 57, 0.8);
-  position: absolute;
-  z-index: 0;
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: rem(30) 0 rem(30) 0;
+
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
-.menu__content {
-  width: rem(600);
-  height: 100%;
-  background-color: #baa5e7;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  padding: rem(50) rem(30);
+.accordion-title:hover {
+}
 
-  .logo {
-    @media (max-width: 400px) {
-      width: adaptiv-num-rem(175, 191, 400, 320);
-    }
+.accordion-content {
+  padding: 0 rem(30) rem(30) rem(30);
+}
+
+.accordion-content {
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
   }
 
-  @media (min-width: 1440px) {
-    width: 40%;
-  }
-
-  @media (max-width: 1280px) {
-    width: adaptiv-num-rem(250, 600, 1280, 320);
-    padding: rem(50) adaptiv-num-rem(15, 30, 1280, 320);
-  }
-
-  ul {
-    li {
-      gap: rem(35);
-      a {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: #ffffff;
-      }
-    }
+  .accordion {
+    width: 90%;
   }
 }
