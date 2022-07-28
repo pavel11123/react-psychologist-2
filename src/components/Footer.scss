@@ -126,8 +126,12 @@ $maxWidth: 1440;
     flex: 1 1 auto;
   }
 
+  @media (max-width: 750px) {
+    gap: rem(15);
+  }
+
   & > .line {
-    @media (max-width: 600px) {
+    @media (max-width: 750px) {
       display: none;
     }
   }
@@ -136,6 +140,11 @@ $maxWidth: 1440;
 .footer__docs {
   display: flex;
   gap: rem(50);
+  margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    gap: adaptiv-num-rem(15, 50, 1280, 320);
+  }
 
   @media (max-width: 1280px) {
     font-size: adaptiv-num-rem(22, 32, 1280, 600);
@@ -152,6 +161,11 @@ $maxWidth: 1440;
     line-height: 20px;
     color: #131b15;
 
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(14, 16, 1280, 320);
+      line-height: adaptiv-num-rem(18, 20, 1280, 320);
+    }
+
     &:last-child {
       padding-right: rem(15);
     }
@@ -163,11 +177,13 @@ $maxWidth: 1440;
   align-items: center;
   padding-left: rem(15);
   gap: 25px;
+  margin: 0 auto;
 }
 
 .society__img {
   width: 32px;
   height: 32px;
+  cursor: pointer;
 
   img {
     width: 100%;
