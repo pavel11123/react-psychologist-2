@@ -154,6 +154,12 @@ $maxWidth: 1440;
   cursor: pointer;
   z-index: 1000;
 
+  &:hover {
+    span {
+      background: #683ace;
+    }
+  }
+
   span {
     display: block;
     position: absolute;

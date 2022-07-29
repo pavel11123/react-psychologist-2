@@ -156,6 +156,10 @@ $maxWidth: 1440;
     flex: 1 1 auto;
     gap: rem(35);
     margin-top: rem(75);
+
+    @media (max-width: 1280px) {
+      gap: adaptiv-num-rem(25, 35, 1280, 320);
+    }
     li {
       align-items: center;
       display: flex;
@@ -168,6 +172,7 @@ $maxWidth: 1440;
         width: 16px;
         height: 16px;
         margin-right: rem(10);
+        flex-shrink: 0;
       }
 
       &:nth-child(1)::before {
@@ -193,6 +198,11 @@ $maxWidth: 1440;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
+
+        @media (max-width: 1280px) {
+          font-size: adaptiv-num-rem(16, 20, 1280, 320);
+          line-height: adaptiv-num-rem(20, 24, 1280, 320);
+        }
 
         &:hover {
           opacity: 0.8;
