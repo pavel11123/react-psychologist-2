@@ -98,28 +98,56 @@ $maxWidth: 1440;
 .article__blog {
   margin: rem(100) 0;
   gap: rem(75);
+
+  @media (max-width: 1280px) {
+    gap: adaptiv-num-rem(25, 75, 1280, 600);
+  }
+  @media (max-width: 600px) {
+    gap: adaptiv-num-rem(25, 75, 600, 320);
+  }
 }
 .blog__block-left {
-  flex: 2 1 rem(300);
+  flex: 2 1 rem(330);
 }
 
 .blog__block-right {
-  flex: 1 1 rem(200);
+  flex: 1 1 rem(215);
 
   h5 {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: rem(20);
+    line-height: rem(24);
     color: #000000;
-    padding-bottom: rem(30);
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(16, 20, 1280, 600);
+      line-height: adaptiv-num-rem(18, 24, 1280, 600);
+    }
+    @media (max-width: 600px) {
+      font-size: adaptiv-num-rem(16, 20, 600, 320);
+      line-height: adaptiv-num-rem(18, 24, 600, 320);
+    }
   }
 
   p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: rem(16);
+    line-height: rem(20);
     color: #000000;
-    padding-bottom: rem(60);
+    padding: rem(30) 0 rem(60) 0;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(12, 16, 1280, 600);
+      line-height: adaptiv-num-rem(16, 20, 1280, 600);
+      padding: adaptiv-num-rem(15, 30, 1280, 600) 0
+        adaptiv-num-rem(25, 60, 1280, 600) 0;
+    }
+    @media (max-width: 600px) {
+      font-size: adaptiv-num-rem(12, 16, 600, 320);
+      line-height: adaptiv-num-rem(16, 20, 600, 320);
+      padding: adaptiv-num-rem(15, 30, 600, 320) 0
+        adaptiv-num-rem(25, 60, 600, 320) 0;
+    }
   }
 }
 
@@ -143,7 +171,19 @@ $maxWidth: 1440;
   background: #683ace;
   border-radius: 10px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: rem(16);
+  line-height: rem(20);
   color: #ffffff;
+
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(12, 16, 1280, 600);
+    line-height: adaptiv-num-rem(16, 20, 1280, 600);
+    padding: adaptiv-num-rem(15, 22, 1280, 600)
+      adaptiv-num-rem(25, 50, 1280, 600);
+  }
+  @media (max-width: 600px) {
+    font-size: adaptiv-num-rem(12, 16, 600, 320);
+    line-height: adaptiv-num-rem(16, 20, 600, 320);
+    padding: adaptiv-num-rem(15, 22, 600, 320) adaptiv-num-rem(25, 50, 600, 320);
+  }
 }
