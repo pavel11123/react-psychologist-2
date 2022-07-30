@@ -398,33 +398,13 @@ $maxWidth: 1440;
         height: rem(1);
         background-color: #683ace;
         margin-right: rem(15);
+        flex-shrink: 0;
       }
     }
   }
 
   & .plus {
     gap: rem(62);
-  }
-}
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 30px;
-  max-width: 620px;
-  margin: 50px auto 75px auto;
-  display: none;
-}
-
-.education__img {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 0 auto;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 }
 // -----------Третий блок Сертификаты и образование-------------
