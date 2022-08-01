@@ -12,7 +12,7 @@ const Menu = ({ items, active, setActive }) => {
       <div className="blur"></div>
       <div
         className="menu__content d-fl-col"
-        onClick={(e) => e.stopPropagation()}
+        // onClick={(e) => e.stopPropagation()}
       >
         <Link to="/">
           <div className="logo">
