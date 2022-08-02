@@ -22,7 +22,10 @@ const Homepage = () => {
                 <li>Экстренная online-помощь</li>
                 <li>Познавательные материалы</li>
               </ul>
-              <a className="btn start__btn" href="/">
+              <a
+                className="btn start__btn"
+                href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
+              >
                 Записаться на бесплатную консультацию
               </a>
             </div>

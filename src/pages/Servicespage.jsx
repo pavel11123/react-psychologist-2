@@ -76,15 +76,21 @@ const Servicespage = () => {
             </div>
           </div>
           <div className="services__more-grid">
-            <Link to="/" className="more__block">
+            <a
+              href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
+              className="more__block"
+            >
               <h3>Индивидуальные сессии</h3>
               <span>Подробнее</span>
-            </Link>
-            <Link to="/" className="more__block">
+            </a>
+            <a
+              href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
+              className="more__block"
+            >
               <h3>Экстренная online-помощь</h3>
               <span>Подробнее</span>
-            </Link>
-            <Link to="/" className="more__block">
+            </a>
+            <Link to="/blog" className="more__block">
               <h3>Познавательные материалы</h3>
               <span>Подробнее</span>
             </Link>
@@ -129,7 +135,10 @@ const Servicespage = () => {
             </div>
           </div>
           <div className="work__popup-main d-fl-wrap">
-            <a href="/" className="work__popup d-fl-col">
+            <a
+              href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
+              className="work__popup d-fl-col"
+            >
               <div className="work__popup-img">
                 <img
                   src="img/icon/meeting.png"
@@ -142,7 +151,10 @@ const Servicespage = () => {
               </h5>
               <span>Бесплатно</span>
             </a>
-            <a href="/" className="work__popup d-fl-col">
+            <a
+              href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
+              className="work__popup d-fl-col"
+            >
               <div className="work__popup-img">
                 <img
                   src="img/icon/schedule.png"
