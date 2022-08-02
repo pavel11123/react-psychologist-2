@@ -116,8 +116,8 @@ $maxWidth: 1440;
     color: #683ace;
 
     @media (max-width: 1280px) {
-      font-size: adaptiv-num-rem(18, 24, 1280, 320);
-      line-height: adaptiv-num-rem(24, 29, 1280, 320);
+      font-size: adaptiv-num-rem(16, 24, 1280, 320);
+      line-height: adaptiv-num-rem(22, 29, 1280, 320);
     }
   }
 }
