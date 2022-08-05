@@ -1,0 +1,174 @@
+@use "sass:math";
+
+// mixin
+//Percent
+// @function percent($px, $from) {
+//   $result: math.div($px, $from) * 100%;
+//   @return $result;
+// }
+
+//REM
+@function rem($px) {
+  $result: ($px / 16) + rem;
+  @return $result;
+}
+
+//EM
+// @function em($px, $current: 16) {
+//   $result: math.div($px, $current) + em;
+//   @return $result;
+// }
+
+// Grids
+@mixin grid($type: fit, $min: 280px, $max: 1fr, $gap: 30px) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
+}
+
+// Адаптивная формула для текста в Rem
+$maxWidth: 1440;
+@mixin adaptiv-font($min: 16, $maxF: 20, $minWidth: 320) {
+  $minF: $min / 16;
+  font-size: calc(
+    #{$minF + rem} + (#{$maxF} - #{$minF * 16}) * ((100vw - #{$minWidth + px}) /
+          (#{$maxWidth} - #{$minWidth}))
+  );
+}
+
+// Адаптивная формула для line-height в Rem
+$maxWidth: 1440;
+@mixin adaptiv-lineHeight($min: 16, $maxF: 20, $minWidth: 320) {
+  $minF: $min / 16;
+  line-height: calc(
+    #{$minF + rem} + (#{$maxF} - #{$minF * 16}) * ((100vw - #{$minWidth + px}) /
+          (#{$maxWidth} - #{$minWidth}))
+  );
+}
+
+// Адаптивная формула для ширины блоков в Px
+@mixin adaptiv-block($min: 16, $maxF: 20, $maxWidth: 1440, $minWidth: 320) {
+  width: calc(
+    #{$min + px} + (#{$maxF} - #{$min}) * ((100vw - #{$minWidth + px}) /
+          (#{$maxWidth} - #{$minWidth}))
+  );
+}
+
+// Адаптивная формула для calc в px
+@function adaptiv-number($min: 16, $maxF: 20, $maxWidth: 1440, $minWidth: 320) {
+  $result: calc(
+    #{$min + px} + (#{$maxF} - #{$min}) * ((100vw - #{$minWidth + px}) /
+          (#{$maxWidth} - #{$minWidth}))
+  );
+  @return $result;
+}
+
+// img
+@mixin img($type: contain) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: $type;
+}
+
+// Адаптивная формула для текста в Rem
+@function adaptiv-num-rem(
+  $min: 16,
+  $maxF: 20,
+  $maxWidth: 1440,
+  $minWidth: 320
+) {
+  $minF: $min / 16;
+  $result: calc(
+    #{$minF + rem} + (#{$maxF} - #{$minF * 16}) * ((100vw - #{$minWidth + px}) /
+          (#{$maxWidth} - #{$minWidth}))
+  );
+  @return $result;
+}
+
+// mixin
+
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+
+.pages__section {
+  margin-top: rem(75);
+}
+
+.title__article {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(32);
+  line-height: rem(39);
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(20, 32, 1280, 320);
+    line-height: adaptiv-num-rem(24, 39, 1280, 320);
+  }
+}
+
+.link__back,
+.link__back-span {
+  font-style: italic;
+  font-size: rem(16);
+  line-height: rem(20);
+  color: rgba(0, 0, 0, 0.5);
+  padding: rem(28) 0;
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(10, 16, 1280, 320);
+    line-height: adaptiv-num-rem(12, 20, 1280, 320);
+  }
+}
+
+.link__back {
+  font-weight: 400;
+}
+
+.link__back-span {
+  font-weight: 500;
+  margin-left: rem(5);
+}
+
+.pages__background {
+  width: 100%;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.article__content {
+  max-width: rem(800);
+  margin: 0 auto;
+  padding: rem(50) 0;
+}
+
+.article__subtitle {
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: rem(24);
+  color: #000000;
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(16, 20, 1280, 320);
+    line-height: adaptiv-num-rem(20, 24, 1280, 320);
+  }
+}
+
+.article__text {
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(20);
+  color: #000000;
+
+  @media (max-width: 1280px) {
+    font-size: adaptiv-num-rem(12, 16, 1280, 320);
+    line-height: adaptiv-num-rem(16, 20, 1280, 320);
+  }
+}

@@ -28,7 +28,7 @@ const Blogpage = () => {
                 <br />
                 Приятного чтения!
               </p>
-              <Link to="/" className="btn blog__btn">
+              <Link to="/blog-five-question" className="btn blog__btn">
                 Перейти к чтению
               </Link>
             </div>
@@ -51,76 +51,7 @@ const Blogpage = () => {
                 <br /> Грамотного психолога необходимо выбирать, руководствуясь
                 основными критериями.
               </p>
-              <Link to="/" className="btn blog__btn">
-                Перейти к чтению
-              </Link>
-            </div>
-          </article>
-
-          <article className="article__blog d-fl-wrap">
-            <div className="blog__block-left">
-              <div className="blog__img">
-                <img
-                  src="img/photo/online-consultation.webp"
-                  alt="Популярные вопросы психологу"
-                />
-              </div>
-            </div>
-            <div className="blog__block-right">
-              <h5>Online косультация?</h5>
-              <p>
-                Грамотный психолог, со временем, помогает человеку восстановить
-                свой психоэмоциональный фон и прийти к здоровому
-                психологическому состоянию.
-              </p>
-              <Link to="/" className="btn blog__btn">
-                Перейти к чтению
-              </Link>
-            </div>
-          </article>
-
-          <article className="article__blog d-fl-wrap">
-            <div className="blog__block-left">
-              <div className="blog__img">
-                <img
-                  src="img/photo/six-mental.webp"
-                  alt="Популярные вопросы психологу"
-                />
-              </div>
-            </div>
-            <div className="blog__block-right">
-              <h5>Как выбрать психолога?</h5>
-              <p>
-                Грамотный психолог, со временем, помогает человеку восстановить
-                свой психоэмоциональный фон и прийти к здоровому
-                психологическому состоянию. <br />
-                <br /> Грамотного психолога необходимо выбирать, руководствуясь
-                основными критериями.
-              </p>
-              <Link to="/" className="btn blog__btn">
-                Перейти к чтению
-              </Link>
-            </div>
-          </article>
-          <article className="article__blog d-fl-wrap">
-            <div className="blog__block-left">
-              <div className="blog__img">
-                <img
-                  src="img/photo/divorce.webp"
-                  alt="Популярные вопросы психологу"
-                />
-              </div>
-            </div>
-            <div className="blog__block-right">
-              <h5>Проблемы в отношениях?</h5>
-              <p>
-                Грамотный психолог, со временем, помогает человеку восстановить
-                свой психоэмоциональный фон и прийти к здоровому
-                психологическому состоянию. <br />
-                <br /> Грамотного психолога необходимо выбирать, руководствуясь
-                основными критериями.
-              </p>
-              <Link to="/" className="btn blog__btn">
+              <Link to="/blog-choise-psychologist" className="btn blog__btn">
                 Перейти к чтению
               </Link>
             </div>
