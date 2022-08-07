@@ -156,7 +156,7 @@ $maxWidth: 1440;
   padding: rem(22);
 }
 
-.blog__content {
+.media__content {
   border: 2px solid #ffffff;
   padding: rem(88) rem(88) rem(22) rem(88);
   gap: rem(45);
@@ -167,25 +167,25 @@ $maxWidth: 1440;
       adaptiv-num-rem(15, 88, 1280, 600);
   }
   @media (max-width: 600px) {
-    padding: adaptiv-num-rem(15, 88, 600, 320) adaptiv-num-rem(15, 88, 600, 320)
-      adaptiv-num-rem(10, 22, 600, 320) adaptiv-num-rem(15, 88, 600, 320);
+    padding: adaptiv-num-rem(15, 88, 600, 320) adaptiv-num-rem(5, 88, 600, 320)
+      adaptiv-num-rem(10, 22, 600, 320) adaptiv-num-rem(5, 88, 600, 320);
   }
 
   h3 {
     font-weight: 500;
-    font-size: rem(36);
-    line-height: rem(44);
+    font-size: rem(20);
+    line-height: rem(30);
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
 
     @media (max-width: 1280px) {
-      font-size: adaptiv-num-rem(26, 36, 1280, 600);
-      line-height: adaptiv-num-rem(34, 44, 1280, 600);
+      font-size: adaptiv-num-rem(12, 20, 1280, 600);
+      line-height: adaptiv-num-rem(20, 30, 1280, 600);
     }
     @media (max-width: 600px) {
-      font-size: adaptiv-num-rem(26, 36, 600, 320);
-      line-height: adaptiv-num-rem(34, 44, 600, 320);
+      font-size: adaptiv-num-rem(12, 20, 600, 320);
+      line-height: adaptiv-num-rem(20, 30, 600, 320);
     }
   }
 
@@ -197,12 +197,12 @@ $maxWidth: 1440;
     color: #ffffff;
 
     @media (max-width: 1280px) {
-      font-size: adaptiv-num-rem(12, 16, 1280, 600);
-      line-height: adaptiv-num-rem(16, 20, 1280, 600);
+      font-size: adaptiv-num-rem(10, 16, 1280, 600);
+      line-height: adaptiv-num-rem(14, 20, 1280, 600);
     }
     @media (max-width: 600px) {
-      font-size: adaptiv-num-rem(12, 16, 600, 320);
-      line-height: adaptiv-num-rem(16, 20, 600, 320);
+      font-size: adaptiv-num-rem(10, 16, 600, 320);
+      line-height: adaptiv-num-rem(14, 20, 600, 320);
     }
   }
 }

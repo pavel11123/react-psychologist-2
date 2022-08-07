@@ -1,6 +1,7 @@
 import "./Homepage.scss";
 import Accordion from "../components/Accordion";
 import { accordionData } from "../components/utils/contents";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -165,6 +166,24 @@ const Homepage = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+      <section className="section__massmedia">
+        <div className="d-fl">
+          <Link
+            to="/mass-media"
+            className="massmeedia__block massmeedia__block-left d-fl-col"
+          >
+            <h4>Публикации в сми</h4>
+            <span>Статьи для научных журналов</span>
+          </Link>
+          <Link
+            to="/blog"
+            className="massmeedia__block massmeedia__block-right d-fl-col"
+          >
+            <h4>Почитать</h4>
+            <span>Об отношениях, самооценке, уверенности</span>
+          </Link>
         </div>
       </section>
     </main>

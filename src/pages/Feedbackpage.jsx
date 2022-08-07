@@ -8,9 +8,19 @@ const Feedbackpage = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 500,
-    slidesToShow: 1,
+    autoplaySpeed: 5000,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -22,156 +32,128 @@ const Feedbackpage = () => {
             <Slider {...settings}>
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Елена, 30 лет</h3>
-                  <div className="slider__title-link d-fl-col">
-                    <div className="slider__title-img">
-                      <svg>
-                        <use xlinkHref="/sprite.svg#wp"></use>
-                      </svg>
-                    </div>
-                    <span>посмотреть диалог</span>
-                  </div>
+                  <h3>Полина</h3>
                 </div>
-                <div className="slider__card d-fl-wrap">
-                  <div className="slider__block-left">
-                    <p>
-                      Мне было 35 лет, когда от меня ушел муж. Сказать, что это
-                      был для меня удар – это ничего не сказать.
-                      <br />
-                      <br />
-                      Вместе мы прожили 8 лет, родить ребенка я не могла, а он
-                      был сильно против усыновления и говорил, что ему дети
-                      вообще не нужны. А в результате ушел к своей любовнице,
-                      которая родила ему сына. Когда он мне об этом сообщил, мне
-                      казалось, что я просто умру. С такой болью жить
-                      невозможно. Следующие два года я и не жила, пребывала в
-                      каком-то липком тумане.
-                      <br />
-                      <br />
-                      Моя подруга пыталась как-то меня расшевелить, но когда
-                      поняла, что сама не справится, уговорила меня записаться
-                      на прием к психологу Екатерине.
-                      <br />
-                      <br />Я пошла даже не за помощью, а чтобы просто ее не
-                      обидеть. И моя жизнь в корне изменилась!
-                    </p>
-                  </div>
-                  <div className="slider__block-right">
-                    <p>
-                      Сейчас я чувствую себя прекрасно, я изменилась к лучшему
-                      как внутренне (полностью спокойна и уверена в себе), так и
-                      внешне.
-                      <br />
-                      <br />И главное, что рядом со мной появился очень дорогой
-                      мне человек. Могу даже сказать, что я теперь рада тому
-                      разводу, без которого мы бы не встретились! <br />
-                      <br />
-                      Огромное спасибо Екатерине!
-                    </p>
-                  </div>
-                </div>
+                <a
+                  href="/img/photo/reviews/feedback-1.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-1-1.jpg" alt="Отзыв" />
+                </a>
               </div>
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Александра, 40 лет</h3>
-                  <div className="slider__title-link d-fl-col">
-                    <div className="slider__title-img">
-                      <svg>
-                        <use xlinkHref="/sprite.svg#wp"></use>
-                      </svg>
-                    </div>
-                    <span>посмотреть диалог</span>
-                  </div>
+                  <h3>Марина</h3>
                 </div>
-                <div className="slider__card d-fl-wrap">
-                  <div className="slider__block-left">
-                    <p>
-                      Мне было 35 лет, когда от меня ушел муж. Сказать, что это
-                      был для меня удар – это ничего не сказать.
-                      <br />
-                      <br />
-                      Вместе мы прожили 8 лет, родить ребенка я не могла, а он
-                      был сильно против усыновления и говорил, что ему дети
-                      вообще не нужны. А в результате ушел к своей любовнице,
-                      которая родила ему сына. Когда он мне об этом сообщил, мне
-                      казалось, что я просто умру. С такой болью жить
-                      невозможно. Следующие два года я и не жила, пребывала в
-                      каком-то липком тумане.
-                      <br />
-                      <br />
-                      Моя подруга пыталась как-то меня расшевелить, но когда
-                      поняла, что сама не справится, уговорила меня записаться
-                      на прием к психологу Екатерине.
-                      <br />
-                      <br />Я пошла даже не за помощью, а чтобы просто ее не
-                      обидеть. И моя жизнь в корне изменилась!
-                    </p>
-                  </div>
-                  <div className="slider__block-right">
-                    <p>
-                      Сейчас я чувствую себя прекрасно, я изменилась к лучшему
-                      как внутренне (полностью спокойна и уверена в себе), так и
-                      внешне.
-                      <br />
-                      <br />И главное, что рядом со мной появился очень дорогой
-                      мне человек. Могу даже сказать, что я теперь рада тому
-                      разводу, без которого мы бы не встретились! <br />
-                      <br />
-                      Огромное спасибо Екатерине!
-                    </p>
-                  </div>
-                </div>
+                <a
+                  href="/img/photo/reviews/feedback-2.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-2-1.jpg" alt="Отзыв" />
+                </a>
               </div>
+
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Мария, 20 лет</h3>
-                  <div className="slider__title-link d-fl-col">
-                    <div className="slider__title-img">
-                      <svg>
-                        <use xlinkHref="/sprite.svg#wp"></use>
-                      </svg>
-                    </div>
-                    <span>посмотреть диалог</span>
-                  </div>
+                  <h3>Тамара</h3>
                 </div>
-                <div className="slider__card d-fl-wrap">
-                  <div className="slider__block-left">
-                    <p>
-                      Мне было 35 лет, когда от меня ушел муж. Сказать, что это
-                      был для меня удар – это ничего не сказать.
-                      <br />
-                      <br />
-                      Вместе мы прожили 8 лет, родить ребенка я не могла, а он
-                      был сильно против усыновления и говорил, что ему дети
-                      вообще не нужны. А в результате ушел к своей любовнице,
-                      которая родила ему сына. Когда он мне об этом сообщил, мне
-                      казалось, что я просто умру. С такой болью жить
-                      невозможно. Следующие два года я и не жила, пребывала в
-                      каком-то липком тумане.
-                      <br />
-                      <br />
-                      Моя подруга пыталась как-то меня расшевелить, но когда
-                      поняла, что сама не справится, уговорила меня записаться
-                      на прием к психологу Екатерине.
-                      <br />
-                      <br />Я пошла даже не за помощью, а чтобы просто ее не
-                      обидеть. И моя жизнь в корне изменилась!
-                    </p>
-                  </div>
-                  <div className="slider__block-right">
-                    <p>
-                      Сейчас я чувствую себя прекрасно, я изменилась к лучшему
-                      как внутренне (полностью спокойна и уверена в себе), так и
-                      внешне.
-                      <br />
-                      <br />И главное, что рядом со мной появился очень дорогой
-                      мне человек. Могу даже сказать, что я теперь рада тому
-                      разводу, без которого мы бы не встретились! <br />
-                      <br />
-                      Огромное спасибо Екатерине!
-                    </p>
-                  </div>
+                <a
+                  href="/img/photo/reviews/feedback-3.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-3-1.jpg" alt="Отзыв" />
+                </a>
+              </div>
+
+              {/* <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Юлия</h3>
                 </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    <source type="video/webm" src={propsVideo.videoWebm} />
+                    <source type="video/webm" src="/video/1.mp4" />
+                  </video>
+                </div>
+              </div> */}
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Кристина</h3>
+                </div>
+                <a
+                  href="/img/photo/reviews/feedback-4.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-4-1.jpg" alt="Отзыв" />
+                </a>
+              </div>
+
+              {/* <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Евгения</h3>
+                </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    <source type="video/webm" src={propsVideo.videoWebm} />
+                    <source type="video/webm" src="/video/22.mp4" />
+                  </video>
+                </div>
+              </div> */}
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Мария</h3>
+                </div>
+                <a
+                  href="/img/photo/reviews/feedback-5.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-5-1.jpg" alt="Отзыв" />
+                </a>
+              </div>
+
+              {/* <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Борис</h3>
+                </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    <source type="video/webm" src={propsVideo.videoWebm} />
+                    <source type="video/webm" src="/video/33.mp4" />
+                  </video>
+                </div>
+              </div> */}
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Алексей</h3>
+                </div>
+                <a
+                  href="/img/photo/reviews/feedback-6.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-6-1.jpg" alt="Отзыв" />
+                </a>
+              </div>
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Светлана</h3>
+                </div>
+                <a
+                  href="/img/photo/reviews/feedback-7.jpg"
+                  target="_blank"
+                  className="slider__card"
+                >
+                  <img src="/img/photo/reviews/feedback-7-1.jpg" alt="Отзыв" />
+                </a>
               </div>
             </Slider>
           </div>

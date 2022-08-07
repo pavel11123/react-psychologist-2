@@ -416,3 +416,63 @@ $maxWidth: 1440;
 .question-main {
 }
 // -----------четвертый блок вопросы-------------
+
+// -----------пятый блок СМИ-------------
+.section__massmedia {
+  margin-bottom: rem(75);
+}
+
+.massmeedia__block {
+  width: 100%;
+  gap: rem(30);
+
+  h4 {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(29);
+    text-transform: uppercase;
+    color: #000000;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(14, 24, 1280, 320);
+      line-height: adaptiv-num-rem(18, 29, 1280, 320);
+    }
+  }
+
+  span {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: rem(24);
+    color: #000000;
+
+    @media (max-width: 1280px) {
+      font-size: adaptiv-num-rem(12, 20, 1280, 320);
+      line-height: adaptiv-num-rem(16, 24, 1280, 320);
+    }
+  }
+
+  &-left {
+    background: #acd0aa;
+    padding: rem(50) rem(15) rem(75) adaptiv-num-rem(15, 220, 1440, 1000);
+    @media (max-width: 1000px) {
+      padding: rem(50) rem(15) rem(75) rem(15);
+    }
+  }
+
+  &-right {
+    background: #e57f8b;
+    padding: rem(50) adaptiv-num-rem(15, 220, 1440, 1000) rem(75) rem(15);
+
+    @media (max-width: 1000px) {
+      padding: rem(50) rem(15) rem(75) rem(15);
+    }
+
+    h4,
+    span {
+      text-align: right;
+    }
+  }
+}
+// -----------пятый блок СМИ-------------

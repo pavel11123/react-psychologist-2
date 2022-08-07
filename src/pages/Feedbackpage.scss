@@ -98,9 +98,12 @@ $maxWidth: 1440;
   }
 }
 
-.slider {
+.slick-list {
   background: #ece8f3;
   border: 2px solid #683ace;
+}
+
+.slider {
   padding: rem(50);
 
   @media (max-width: 1280px) {
@@ -132,7 +135,7 @@ $maxWidth: 1440;
   margin-left: rem(30);
   cursor: pointer;
 
-  span {
+  a {
     font-weight: 500;
     font-size: rem(10);
     line-height: rem(12);
@@ -168,23 +171,29 @@ $maxWidth: 1440;
 }
 
 .slider__card {
-  gap: rem(20);
+  max-width: 300px;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  padding: 0 0 100% 0;
 
-  p {
-    font-weight: 400;
-    font-size: rem(16);
-    line-height: rem(20);
-    color: #131b15;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    @media (max-width: 1280px) {
-      font-size: adaptiv-num-rem(14, 16, 1280, 712);
-      line-height: adaptiv-num-rem(18, 20, 1280, 712);
-    }
-
-    @media (max-width: 711px) {
-      font-size: adaptiv-num-rem(14, 16, 711, 320);
-      line-height: adaptiv-num-rem(18, 20, 711, 320);
-    }
+  video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 

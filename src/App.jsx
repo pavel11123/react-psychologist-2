@@ -4,6 +4,9 @@ import { Homepage } from "./pages/Homepage";
 import { Servicespage } from "./pages/Servicespage";
 import { Feedbackpage } from "./pages/Feedbackpage";
 import { Blogpage } from "./pages/Blogpage";
+import { Questionpage } from "./pages/Questionpage";
+import { Choisepage } from "./pages/Choisepage";
+import { Massmediapage } from "./pages/Massmediapage";
 import { Notfoundpage } from "./pages/Notfoundpage";
 
 import Header from "./components/Header";
@@ -19,6 +22,9 @@ function App() {
         <Route path="/services" element={<Servicespage />} />
         <Route path="/feedback" element={<Feedbackpage />} />
         <Route path="/blog" element={<Blogpage />} />
+        <Route path="/blog-five-question" element={<Questionpage />} />
+        <Route path="/blog-choise-psychologist" element={<Choisepage />} />
+        <Route path="/mass-media" element={<Massmediapage />} />
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
 
