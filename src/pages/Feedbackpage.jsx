@@ -68,17 +68,17 @@ const Feedbackpage = () => {
                 </a>
               </div>
 
-              {/* <div className="slider">
+              <div className="slider">
                 <div className="slider__title d-fl">
                   <h3>Юлия</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
-                    <source type="video/webm" src={propsVideo.videoWebm} />
-                    <source type="video/webm" src="/video/1.mp4" />
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
+                    <source type="video/webm" src="/video/11.mp4" />
                   </video>
                 </div>
-              </div> */}
+              </div>
 
               <div className="slider">
                 <div className="slider__title d-fl">
@@ -93,17 +93,17 @@ const Feedbackpage = () => {
                 </a>
               </div>
 
-              {/* <div className="slider">
+              <div className="slider">
                 <div className="slider__title d-fl">
                   <h3>Евгения</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
-                    <source type="video/webm" src={propsVideo.videoWebm} />
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
                     <source type="video/webm" src="/video/22.mp4" />
                   </video>
                 </div>
-              </div> */}
+              </div>
 
               <div className="slider">
                 <div className="slider__title d-fl">
@@ -118,17 +118,17 @@ const Feedbackpage = () => {
                 </a>
               </div>
 
-              {/* <div className="slider">
+              <div className="slider">
                 <div className="slider__title d-fl">
                   <h3>Борис</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
-                    <source type="video/webm" src={propsVideo.videoWebm} />
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
                     <source type="video/webm" src="/video/33.mp4" />
                   </video>
                 </div>
-              </div> */}
+              </div>
 
               <div className="slider">
                 <div className="slider__title d-fl">
