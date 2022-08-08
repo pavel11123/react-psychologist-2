@@ -143,7 +143,7 @@ const Feedbackpage = () => {
 
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Борис</h3>
+                  <h3>Евгений</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
@@ -168,7 +168,7 @@ const Feedbackpage = () => {
 
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Борис</h3>
+                  <h3>Юлия</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
@@ -180,7 +180,7 @@ const Feedbackpage = () => {
 
               <div className="slider">
                 <div className="slider__title d-fl">
-                  <h3>Борис</h3>
+                  <h3>Светлана</h3>
                 </div>
                 <div className="slider__card">
                   <video controls preload="metadata">
