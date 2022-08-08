@@ -25,6 +25,7 @@ const Homepage = () => {
               </ul>
               <a
                 className="btn start__btn"
+                target="_blank"
                 href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
               >
                 Записаться на бесплатную консультацию

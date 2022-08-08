@@ -245,12 +245,17 @@ $maxWidth: 1440;
 
 // -----------Второй блок обо мне-------------
 .section__about {
-  margin-top: rem(200);
+  margin-top: rem(150);
+  background-image: url(../../public/img/back/background-brain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rem(50) 0;
+
   @media (max-width: 1280px) {
-    margin-top: adaptiv-num-rem(150, 200, 1280, 600);
+    margin-top: adaptiv-num-rem(100, 150, 1280, 600);
   }
   @media (max-width: 600px) {
-    margin-top: adaptiv-num-rem(100, 150, 600, 320);
+    margin-top: adaptiv-num-rem(50, 100, 600, 320);
 
     & .section-wrap {
       flex-wrap: wrap-reverse;
@@ -359,6 +364,10 @@ $maxWidth: 1440;
 
 // -----------Третий блок Сертификаты и образование-------------
 .section__education {
+  background-image: url(../../public/img/back/background-education.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rem(50) 0;
 }
 
 .education-main {
@@ -411,6 +420,10 @@ $maxWidth: 1440;
 
 // -----------четвертый блок вопросы-------------
 .section__question {
+  background-image: url(../../public/img/back/background-brain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rem(50) 0;
 }
 
 .question-main {

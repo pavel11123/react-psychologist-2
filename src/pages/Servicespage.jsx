@@ -79,6 +79,7 @@ const Servicespage = () => {
             <a
               href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
               className="more__block"
+              target="_blank"
             >
               <h3>Индивидуальные сессии</h3>
               <span>Подробнее</span>
@@ -86,6 +87,7 @@ const Servicespage = () => {
             <a
               href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
               className="more__block"
+              target="_blank"
             >
               <h3>Экстренная online-помощь</h3>
               <span>Подробнее</span>
@@ -138,6 +140,7 @@ const Servicespage = () => {
             <a
               href="https://qlick.io/widget/ekaterina-slavnaya/meeting-60m/start"
               className="work__popup d-fl-col"
+              target="_blank"
             >
               <div className="work__popup-img">
                 <img
@@ -159,6 +162,7 @@ const Servicespage = () => {
                 <img
                   src="img/icon/schedule.png"
                   alt="Первая консультация от Екатерины Славной бесплатно!"
+                  target="_blank"
                 />
               </div>
               <h5>
