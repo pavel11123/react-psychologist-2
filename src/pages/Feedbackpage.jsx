@@ -8,9 +8,7 @@ const Feedbackpage = () => {
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
     speed: 500,
-    autoplaySpeed: 5000,
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
