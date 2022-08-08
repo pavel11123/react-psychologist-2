@@ -145,6 +145,18 @@ const Feedbackpage = () => {
 
               <div className="slider">
                 <div className="slider__title d-fl">
+                  <h3>Борис</h3>
+                </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
+                    <source type="video/webm" src="/video/4.mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div className="slider">
+                <div className="slider__title d-fl">
                   <h3>Светлана</h3>
                 </div>
                 <a
@@ -154,6 +166,30 @@ const Feedbackpage = () => {
                 >
                   <img src="/img/photo/reviews/feedback-7-1.jpg" alt="Отзыв" />
                 </a>
+              </div>
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Борис</h3>
+                </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
+                    <source type="video/webm" src="/video/5.mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div className="slider">
+                <div className="slider__title d-fl">
+                  <h3>Борис</h3>
+                </div>
+                <div className="slider__card">
+                  <video controls preload="metadata">
+                    {/* <source type="video/webm" src={propsVideo.videoWebm} /> */}
+                    <source type="video/webm" src="/video/6.mp4" />
+                  </video>
+                </div>
               </div>
             </Slider>
           </div>
