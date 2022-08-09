@@ -7,6 +7,7 @@ import { Blogpage } from "./pages/Blogpage";
 import { Questionpage } from "./pages/Questionpage";
 import { Choisepage } from "./pages/Choisepage";
 import { Massmediapage } from "./pages/Massmediapage";
+import { Testpage } from "./pages/Testpage";
 import { Notfoundpage } from "./pages/Notfoundpage";
 
 import Header from "./components/Header";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/blog-five-question" element={<Questionpage />} />
         <Route path="/blog-choise-psychologist" element={<Choisepage />} />
         <Route path="/mass-media" element={<Massmediapage />} />
+        <Route path="/test" element={<Testpage />} />
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
 
